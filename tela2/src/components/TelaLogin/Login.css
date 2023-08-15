@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-image {
+  flex: 1;
+  height: 100vh; /* Defina a altura para ocupar toda a altura da tela */
+  background-image: url('../../assets/fundoforum.png');
+  background-size: cover;
+}
+
+.login-box {
+  flex: 1;
+  border-radius: 10px;
+  padding: 10px;
+  /* Remova a sombra e a borda */
+  box-shadow: none;
+  border: none;
+  /* Adicione espaço entre o logo e o formulário */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Criar o contexto de posicionamento */
+  width: 400px; /* Defina a largura da caixa de login */
+  max-width: 80%; /* Limite a largura máxima */
+  margin-left: -180px;
+}
+
+.logo {
+  position: absolute; /* Posicionamento absoluto */
+  top: -120px; /* Ajuste a distância do topo */
+  left: 220px; /* Ajuste a distância da esquerda */
+}
+
+.logo img {
+  width: 180px; /* Defina o tamanho do logo */
+}
+
+h2 {
+  text-align: left;
+  white-space: normal;
+  margin-left: -190px;
+
+}
+
+p{
+  margin-top: -15px;
+  margin-left: -10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: grey; /* Remover o contorno do formulário */
+}
+
+input {
+  width: 100%; /* Defina a largura dos inputs para ocupar todo o espaço da caixa */
+  max-width: 250px; /* Limite a largura máxima dos inputs */
+  padding: 10px;
+  margin: 10px;
+  border-color: grey; /* Remover o contorno dos inputs */
+  border-radius: 5px;
+}
+
+button {
+  width: 100%; /* Defina a largura do botão para ocupar todo o espaço da caixa */
+  max-width: 250px; /* Limite a largura máxima do botão */
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #89DFBB;
+  color: white;
+  border: none; /* Remover o contorno do botão */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password {
+  text-align: right; /* Alinhe o link à direita */
+  margin-top: 5px; /* Adicione um espaçamento entre o link e o campo de senha */
+  margin-left: 70px;
+}
